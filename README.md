@@ -72,7 +72,7 @@ curl -F "audio_base64=@test_8Khz.wav" -F 'metadata={"ID":"test-1234","modelID":"
 
     For get Transcription:-  
     POST :-  
-      ```javascript
+```
       curl -X POST 'https://h5kfjte0x3.execute-api.ap-south-1.amazonaws.com/webhook' \
       -H 'Content-Type: application/json' \
       -d '{
@@ -83,14 +83,14 @@ curl -F "audio_base64=@test_8Khz.wav" -F 'metadata={"ID":"test-1234","modelID":"
             "command":"transcribe",
             "webhook":" Webhook URL"
           }'
-      ```
+```
 
   ### Acknowledgement Status:-
 
   Request Verification:-
 
     - 1.1) Success:Send success acknowledgement  
-        ```
+```
         {
           status: 'success',
           message: 'Request Received Successfully',
@@ -106,9 +106,9 @@ curl -F "audio_base64=@test_8Khz.wav" -F 'metadata={"ID":"test-1234","modelID":"
           },
           timestamp: < Timestamp >
         }
-        ```
+```
     - 1.2) Params Error:Send acknowledgement with parameters error message  
-        ```
+```
         {
           status: 'fail',
           message: < Invalid Params Error >,
@@ -124,4 +124,4 @@ curl -F "audio_base64=@test_8Khz.wav" -F 'metadata={"ID":"test-1234","modelID":"
             },
           timestamp: < Timestamp >
         }
-        ```
+```
