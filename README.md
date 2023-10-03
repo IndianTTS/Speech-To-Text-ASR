@@ -132,7 +132,7 @@ curl -F "audio_base64=@test_8Khz.wav" -F 'metadata={"ID":"test-1234","modelID":"
 - model = 1
 - user_id = XXXXX
 - samplerate = 8000/16000
-- URL = wss://indiantts.com/stream/api/ws/recognize?model=1&user_id=XXXXX&samplerate=8000/16000  
+- URL = [wss://indiantts.com/stream/api/ws/recognize?model=1&user_id=XXXXX&samplerate=8000/16000](wss://indiantts.com/stream/api/ws/recognize?model=1&user_id=XXXXX&samplerate=8000/16000)
 
 **Web Socket Methods**  
 
