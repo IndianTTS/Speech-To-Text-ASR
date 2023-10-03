@@ -104,7 +104,7 @@ curl -F "audio_base64=@test_8Khz.wav" -F 'metadata={"ID":"test-1234","modelID":"
             webhook: < Webhool URL > ,
             mode: < Environment > ,
             command: < Commad Name >
-            },
+          },
           timestamp: < Timestamp >
         }
         ```
@@ -115,13 +115,13 @@ curl -F "audio_base64=@test_8Khz.wav" -F 'metadata={"ID":"test-1234","modelID":"
           message: < Invalid Params Error >,
           params:
             {
-            S3_URL: < Audio File URL > ,
-            modelID: < Model ID > ,
-            ID: < Unique Request ID > ,
-            userID: < User ID > ,
-            webhook: < Webhool URL > ,
-            mode: < Environment > ,
-            command: < Commad Name >
+              S3_URL: < Audio File URL > ,
+              modelID: < Model ID > ,
+              ID: < Unique Request ID > ,
+              userID: < User ID > ,
+              webhook: < Webhool URL > ,
+              mode: < Environment > ,
+              command: < Commad Name >
             },
           timestamp: < Timestamp >
         }
