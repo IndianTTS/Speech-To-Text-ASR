@@ -125,3 +125,62 @@ curl -F "audio_base64=@test_8Khz.wav" -F 'metadata={"ID":"test-1234","modelID":"
           timestamp: < Timestamp >
         }
 ```
+## (3) Wehshocket method to get text in realtime on audio stream.  
+
+**ASR Websocket method.**  
+
+- model = 1
+- user_id = XXXXX
+- samplerate = 8000/16000
+- URL = wss://indiantts.com/stream/api/ws/recognize?model=1&user_id=XXXXX&samplerate=8000/16000  
+
+**Web Socket Methods**  
+
+- Create websocket connection -
+``` 
+ws = new WebSocket(url);
+```
+
+- Check websocket connection -
+``` 
+ws.readyState;
+```
+
+- Send blob -
+```  
+ws.send(item);
+```
+
+- Got response in-
+```  
+ws.onmessage
+```
+
+- Stop streaming -
+```  
+ws.send('{"eof" : 1}');
+```
+
+- Close websocket connection -
+```  
+ws.close();
+```
+
+### Available Languages:- (Indian Available Language)
+- Indian English
+- Hindi
+- Gujarati
+- Marathi
+- Tamil
+- Telugu
+- Bengali
+- Kannada
+- Oriya
+- Punjabi
+- Malayalam
+- Assamese
+
+### (Overseas Available language)
+- German
+- Norway
+ 
