@@ -24,7 +24,7 @@ Get text from audio
     **userID** : [string] – User ID()  
     **mode** : [string] – Environment   - dev  
 
-API  Format - 
+#### API Format - 
 
 Curl Sample Command :-
 
@@ -68,7 +68,7 @@ curl -F "audio_base64=@test_8Khz.wav" -F 'metadata={"ID":"test-1234","modelID":"
     - hi for Hindi
     - By Default its give Mix output.
 
-  ### API Format :-
+  #### API Format :-
 
     For get Transcription:-  
     POST :-  
