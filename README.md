@@ -72,7 +72,6 @@ curl -F "audio_base64=@test_8Khz.wav" -F 'metadata={"ID":"test-1234","modelID":"
 
     For get Transcription:-  
     POST :-  
-
       ```
       curl -X POST 'https://h5kfjte0x3.execute-api.ap-south-1.amazonaws.com/webhook' \
       -H 'Content-Type: application/json' \
